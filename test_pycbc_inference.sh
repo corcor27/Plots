@@ -2,6 +2,7 @@ module load ldg/pycbc-testing
 #Create new directory for this inference run
 #NAMEDIR=`date '+%Y%m%d-%H%M%S'`
 NAMEDIR=testrun
+mkdir ${NAMEDIR}
 PAR=${NAMEDIR}/parameters.txt
 
 # define coalescence time, observed masses, and waveform parameters
