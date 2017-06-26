@@ -1,0 +1,9 @@
+executable     = /home/c1265898/LIGO-Project-Codes/RhysCory/test_pycbc_inference.sh
+universe       = vanilla
+getenv         = True
+output         = test.out
+error          = test.error
+log            = test.log
+request_cpus = 12
+accounting_group = aluk.dev.o2.cbc.explore.test
+queue
