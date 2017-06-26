@@ -12,7 +12,7 @@ RA=2.21535724066
 DEC=-1.23649695537
 THETA_JN=2.7  ### <<---- this parameter is no longer relevant
 ## Inclination calculated manually currently using findTheta.py
-INC=0.
+INC=1.0471975512
 COA_PHASE=0.
 POLARIZATION=0.8
 DISTANCE=800000 # in kpc
@@ -26,8 +26,8 @@ MIN_KAPPA1=0.0
 MAX_KAPPA1=0.0
 MIN_SPIN2=0.0
 MAX_SPIN2=0.0
-MIN_KAPPA2=0.5
-MAX_KAPPA2=0.5
+MIN_KAPPA2=0.0
+MAX_KAPPA2=0.0
 
 # path of injection file that will be created in the example
 INJ_PATH=${NAMEDIR}/injection.xml.gz
