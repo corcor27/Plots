@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 #Create new directory for this inference run
 NAMEDIR=`date '+%Y%m%d-%H%M%S'`
 mkdir ${NAMEDIR}
