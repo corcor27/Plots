@@ -15,7 +15,7 @@ THETA_JN=2.7  ### <<---- this parameter is no longer relevant
 INC=1.0471975512
 COA_PHASE=0.
 POLARIZATION=0.8
-DISTANCE=800000 # in kpc
+DISTANCE=500000 # in kpc
 INJ_F_MIN=20.
 TAPER="start"
 
