@@ -1,4 +1,4 @@
-executable     = /home/c1265898/LIGO-Project-Codes/Inference/runference.sh
+executable     = /home/c1324200/pLots/
 universe       = vanilla
 getenv         = True
 output         = test.out
