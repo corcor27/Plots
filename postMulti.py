@@ -12,6 +12,7 @@ print "Initialising..."
 ## Select file
 folder=sys.argv[1]
 folder=folder+"/"
+num_walkers=5000
 
 ## Combine inputs to form variables
 data_name="output.hdf"
