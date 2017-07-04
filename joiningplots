@@ -1,7 +1,9 @@
-fig = plt.figure(figsize=(16,6))
-ax0 = fig.add_subplot(20170620-172830mass_1.png)
-ax0.plot(*args0)
-ax1 = fig.add_subplot(20170628-182557mass_1.png)
-ax1.plot(*args1)
-plt.tight_layout()
-plt.savefig('plots.png')
+import matplotlib.pyplot as plt
+import numpy as np
+
+number_of_im = 2
+figures = {'20170620-172830m.png', '20170628-182557m.png'}
+
+# plot of the images in a figure, with 2 rows and 3 columns
+plot_figures(figures, 1, 2)
+plt.savefig('m1comparision')
