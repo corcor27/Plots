@@ -2,4 +2,4 @@ images = ["20170620-172830m1.png", "20170628-182557m1.png"]
 output = concat_n_images(images)
 import matplotlib.pyplot as plt
 plt.imshow(output)
-plt.savefig('m1comparision)
+plt.savefig('m1comparision')
