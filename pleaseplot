@@ -1,0 +1,18 @@
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+import numpy as np
+from pycbc.io import InferenceFile
+import sys
+from lalsimulation import SimInspiralTransformPrecessingNewInitialConditions
+from pycbc.waveform import get_td_waveform
+
+print "Initialising..."
+
+## Select file
+folder=sys.argv[1]
+folder=folder+"/"
+num_walkers=5000
+
+## Combine inputs to form variables
+data_name="output.hdf"
