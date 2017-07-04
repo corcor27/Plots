@@ -1,3 +1,17 @@
-mport matplotlib.pyplot as plt
-import numpy as np
+import sys
+from PIL import Image
 
+images = map(Image.open, ['20170620-172830m1.png', '20170628-182557m1.png'])
+widths, heights = zip(*(i.size for i in images))
+
+total_width = sum(widths)
+max_height = max(heights)
+
+new_im = Image.new('RGB', (total_width, max_height))
+
+x_offset = 0
+for im in images:
+  new_im.paste(im, (x_offset,0))
+  x_offset += im.size[0]
+
+new_im.save('m1_comparision')
