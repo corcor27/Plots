@@ -18,8 +18,6 @@ def plot_figures(figures, nrows = 1, ncols=1):
     for ind,title in zip(range(len(figures)), figures):
         axeslist.ravel()[ind].imshow(figures[title], cmap=plt.gray())
         axeslist.ravel()[ind].set_title(title)
-        axeslist.ravel()[ind].set_axis_off()
-    plt.tight_layout() # optional
-    
+        axeslist.ravel()[ind].set_axis_off()    
     plt.savefig('m1comparision')
 
