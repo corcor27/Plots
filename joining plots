@@ -1,4 +1,6 @@
-import sys
+import matplotlib
+import matplotlib.pyplot as plt
+
 from PIL import Image
 
 images = map(Image.open, ['20170620-172830m1.png', '20170628-182557m1.png'])
