@@ -1,8 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-img_A = np.ones((10,10))
-img_B = np.ones((10,10))
+20170620-172830m1.png = np.ones((10,10))
+20170628-182557m1.png = np.ones((10,10))
 
 plot_image = np.concatenate((img_A, img_B), axis=1)
 
