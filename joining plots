@@ -12,4 +12,4 @@ for n, fname in enumerate(('20170628-182557m1.png', '20170620-172830m1.png')):
     # f.add_subplot(1, 2, n)  # this line outputs images side-by-side
     pylab.imshow(arr,cmap=cm.Greys_r)
 pylab.title('Double image')
-pylab.show()
+pylab.savefig('m1compare.png')
