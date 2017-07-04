@@ -16,3 +16,36 @@ num_walkers=5000
 
 ## Combine inputs to form variables
 data_name="output.hdf"
+
+## list of parameters
+params=np.array(["q",
+		             "mchirp",
+		             "distance",
+		             "inclination",
+		             "polarization",
+	               "spin1_a",
+		             "spin1_polar",
+		             "spin2_a",
+		             "spin2_polar",
+                 "mass1",
+                 "mass2",
+                 "chi_p",
+                 "chi_eff",
+                 "ra",
+                 "dec"])
+                
+   ## Function to extract posterior for a given parameter
+def getParameter(parameter):
+   ## Prepare to read in parameters
+   datafile=folder+data_name
+   fp = InferenceFile("%s" % datafile, "r")
+   
+   ## Take last iteration of each walker
+   parameter_values=np.array([])
+   for aa in range(num_walkers):
+      samples = fp.read_samples("%s" % parameter, walkers=aa)
+      temp=getattr(samples,parameter)
+      parameter_values=np.append(parameter_values,temp[-1])
+   return parameter_values
+   
+def 
