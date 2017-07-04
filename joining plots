@@ -1,9 +1,14 @@
 import numpy as np
-import matplotlib.pyplot as plt
+import pylab
+import matplotlib.cm as cm
+import Image
 
-20170620-172830m1.png = np.ones((10,10))
-20170628-182557m1.png = np.ones((10,10))
-
-plot_image = np.concatenate((img_A, img_B), axis=1)
-
-plt.imshow(plot_image)
+f = pylab.figure()
+for n, fname in enumerate(('20170628-182557m1.png', '20170620-172830m1.png')):
+    image=Image.open(fname).convert("L")
+    arr=np.asarray(image)
+    f.add_subplot(2, 1, n)  # this line outputs images on top of each other
+    # f.add_subplot(1, 2, n)  # this line outputs images side-by-side
+    pylab.imshow(arr,cmap=cm.Greys_r)
+pylab.title('Double image')
+pylab.show()
