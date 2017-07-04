@@ -1,7 +1,9 @@
-import Image
+import numpy as np
+import matplotlib.pyplot as plt
 
-background = Image.open("test1.png")
-foreground = Image.open("test2.png")
+img_A = np.ones((10,10))
+img_B = np.ones((10,10))
 
-background.paste(foreground, (0, 0), foreground)
-background.show()
+plot_image = np.concatenate((img_A, img_B), axis=1)
+
+plt.imshow(plot_image)
