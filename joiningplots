@@ -1,11 +1,11 @@
 import numpy as np
 import pylab
 import matplotlib.cm as cm
-import Image 
+import png 
 
 f = pylab.figure()
 for n, fname in enumerate(('20170628-182557m1.png', '20170620-172830m1.png')):
-    image=Image.open(fname).convert("L")
+    image=png.open(fname).convert("L")
     arr=np.asarray(image)
     f.add_subplot(2, 1, n)  # this line outputs images on top of each other
     # f.add_subplot(1, 2, n)  # this line outputs images side-by-side
