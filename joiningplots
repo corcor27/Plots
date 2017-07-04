@@ -1,5 +1,11 @@
-images = ["20170620-172830m1.png", "20170628-182557m1.png"]
-output = concat_n_images(images)
 import matplotlib.pyplot as plt
-plt.imshow(output)
-plt.savefig('m1comparision')
+import matplotlib.image as mping
+
+img=mping.imread(home/c1324200/Plots/20170628-182557m.png)
+img2=mping.imread(home/c1324200/Plots/20170620-172830m1.png)
+
+fig = plt.figure()
+fig.add_subplot(211)
+plt.imshow(img)
+fig.add_subplot(212)
+plt.imshow(img2)
