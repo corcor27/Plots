@@ -1,7 +1,8 @@
 import numpy as np
 import pylab
 import matplotlib.cm as cm
-import Image
+import Image 20170628-182557m1.png
+import Image 20170620-172830m1.png
 
 f = pylab.figure()
 for n, fname in enumerate(('20170628-182557m1.png', '20170620-172830m1.png')):
