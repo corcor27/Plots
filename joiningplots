@@ -1,14 +1,10 @@
-import numpy as np
-import pylab
-import matplotlib.cm as cm
+import numpy as N
+import pylab as P
+import matplotlib as cm
 from PIL import Image 
-
-f = pylab.figure()
-for n, fname in enumerate(('20170628-182557m1.png', '20170620-172830m1.png')):
-    image=Image.open(fname).convert("L")
-    arr=np.asarray(image)
-    f.add_subplot(2, 1, n)  # this line outputs images on top of each other
-    # f.add_subplot(1, 2, n)  # this line outputs images side-by-side
-    pylab.imshow(arr,cmap=cm.Greys_r)
-pylab.title('Double image')
-pylab.savefig('m1compare.png')
+fnames = ['20170620-172830m1.png', '20170628-182557m1.png']
+fig = P.figure()
+for i,fname in enumerate(fnames):
+    fig.add_subplot(number_images, 1, i+1)
+    P.imshow(N.asarray(Image.open(fname).convert("L")))
+P.savefig('m1_comparision.png')   
