@@ -8,4 +8,4 @@ for elem in list_im:
     for i in xrange(0,444,95):
         im=Image.open(elem)
         new_im.paste(im, (i,0))
-new_im.save('test.jpg')
+new_im.save('m1compaision.png')
