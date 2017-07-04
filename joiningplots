@@ -5,5 +5,4 @@ number_of_im = 2
 figures = {'20170620-172830m.png', '20170628-182557m.png'}
 
 # plot of the images in a figure, with 2 rows and 3 columns
-plot_figures(figures, 1, 2)
-plt.savefig('m1comparision')
+plot_figures.savefig('m1comparision')
