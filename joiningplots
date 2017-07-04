@@ -4,6 +4,6 @@ import numpy as np
 import sys
 from PIL import Image
 
-plot1=Image.open(home/c1324200/Plots/20170620-172830m1.png)
+plot1=Image.open(home/c1324200/Plots/20170620-172830mass_1.png)
 plot1.thumbnail((64, 64), Image.ANTIALIAS)
 plt.savefig('m1comparision')
