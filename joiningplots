@@ -1,12 +1,12 @@
 import matplotlib.pyplot as plt
 import matplotlib.image as mping
 
-img=mping.imread(home/c1324200/Plots/20170628-182557m.png)
-img2=mping.imread(home/c1324200/Plots/20170620-172830m1.png)
+img=mping.imread('/home/c1324200/Plots/20170628-182557m.png')
+img2=mping.imread('/home/c1324200/Plots/20170620-172830m1.png')
 
 fig = plt.figure()
 fig.add_subplot(211)
 plt.imshow(img)
 fig.add_subplot(212)
 plt.imshow(img2)
-plt.savefig(home/c1324200/Plots/m1comparsions.png)
+plt.savefig('/home/c1324200/Plots/m1comparsions.png')
