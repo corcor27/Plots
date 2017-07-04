@@ -21,5 +21,5 @@ def plot_figures(figures, nrows = 1, ncols=1):
         axeslist.ravel()[ind].set_axis_off()
     plt.tight_layout() # optional
     
-    pylab.savefig('m1comparision')
+    plt.savefig('m1comparision')
 
