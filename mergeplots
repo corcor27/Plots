@@ -1,0 +1,10 @@
+import Image
+
+background = Image.open("20170620-172830m1.png")
+overlay = Image.open("20170628-182557m1.png")
+
+background = background.convert("RGBA")
+overlay = overlay.convert("RGBA")
+
+new_img = Image.blend(background, overlay, 0.5)
+new_img.save("m1comp","PNG")
