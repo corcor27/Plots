@@ -1,4 +1,4 @@
-executable     = /home/c1324200/ligo-/test_pycbc_inference.sh
+executable     = /home/c1324200/Plots/test_pycbc_inference.sh
 universe       = vanilla
 getenv         = True
 output         = test.out
